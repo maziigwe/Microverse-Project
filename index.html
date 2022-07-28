@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script  src="js/index.js"></script>
+<body>
 
-    <h1 id="title"> Survey Form</h1>
-    <p id="description"> This is a simple survey form.</p>\
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="js/index.js"></script>
+
+  <h1 id="title"> Survey Form</h1>
+  <p id="description"> This is a simple survey form.</p>\
 
 
-    <form id="survey-form">
-      <div>
-
+  <form id="survey-form">
+    <div>
       <label for="name" id="name-label">Input Name</label>
-      <input required type="text" id="name" />
-      </div>
+      <input required type="text" id="name" placeholder="Please enter your name" />
+    </div>
 
-      <div>
+    <div>
       <label for="email" id="email-label">Input Email</label>
-      <input required type="email" id="email" />  
-      </div>
+      <input required type="email" id="email" placeholder="Please enter your email" />
+    </div>
 
-      <div>
-        <label for="number" id="number-label">Input number</label>
-      <input type="number" id="number" min='1' max='10'/>  
-      </div>
-    </form>
-    
-  </body>
+    <div>
+      <label for="number" id="number-label">Input number</label>
+      <input type="number" id="number" min='1' max='10' placeholder="Please enter your number" />
+    </div>
+
+    <div>
+      <select id="dropdown">
+        <option>
+          Option 1
+        </option>
+        <option>Option 2</option>
+      </select>
+    </div>
+  </form>
+
+</body>
+
 </html>
